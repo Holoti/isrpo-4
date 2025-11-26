@@ -143,8 +143,10 @@ Example:
 
 ## History (recent to old)
 
-* 45a5743 (HEAD -> new_features_501803) fix: rectangle.py: perimeter()
-* 0b7d7b7 feat: triangle.py
-* 7297e0d feat: rectangle.py
-* d078c8d (origin/main, origin/HEAD, main) L-03: Docs added
-* 8ba9aeb L-03: Circle and square added
+* bc85c05 (HEAD -> main, origin/main, origin/HEAD) test: testing report
+* 5b8dba0 test: triangle
+* d871ae9 test: square
+* 1d68240 test: rectangle
+* 582d11f test: circle
+* ce1ab33 feat: geometric lib
+* bae957c Initial commit
