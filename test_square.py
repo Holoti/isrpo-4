@@ -18,6 +18,10 @@ class SquareAreaTestCase(unittest.TestCase):
 	def test_big_area(self):
 		res = square.area(100)
 		self.assertEqual(res, 10000)
+	
+	def test_negative_side(self):
+		res = square.area(-10)
+		self.assertIsNone(res)
 
 class SquarePerimeterTestCase(unittest.TestCase):
 	def test_side_zero(self):
@@ -35,3 +39,7 @@ class SquarePerimeterTestCase(unittest.TestCase):
 	def test_side_big(self):
 		res = square.perimeter(1000)
 		self.assertEqual(res, 4000)
+	
+	def test_negative_side(self):
+		res = square.perimeter(-10)
+		self.assertIsNone(res)

@@ -10,6 +10,10 @@ class RectangleAreaTestCase(unittest.TestCase):
 	def test_square(self):
 		res = rectangle.area(10, 10)
 		self.assertEqual(res, 100)
+	
+	def test_negative_side(self):
+		res = rectangle.area(-10, 5)
+		self.assertIsNone(res)
 
 
 class RectanglePerimeterTestCase(unittest.TestCase):
@@ -24,3 +28,7 @@ class RectanglePerimeterTestCase(unittest.TestCase):
 	def test_square(self):
 		res = rectangle.perimeter(10, 10)
 		self.assertEqual(res, 40)
+	
+	def test_negative_side(self):
+		res = rectangle.perimeter(-6, 4)
+		self.assertIsNone(res)

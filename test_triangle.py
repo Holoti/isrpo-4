@@ -18,6 +18,14 @@ class TriangleAreaTestCase(unittest.TestCase):
 	def test_area_float(self):
 		res = triangle.area(3, 5)
 		self.assertEqual(res, 7.5)
+	
+	def test_negative_height(self):
+		res = triangle.area(-3, 4)
+		self.assertIsNone(res)
+	
+	def test_negative_base(self):
+		res = triangle.area(6, -5)
+		self.assertIsNone(res)
 
 class TrianglePerimeterTestCase(unittest.TestCase):
 	def test_equal_sides(self):
@@ -27,3 +35,7 @@ class TrianglePerimeterTestCase(unittest.TestCase):
 	def test_right_triangle(self):
 		res = triangle.perimeter(3, 4, 5)
 		self.assertEqual(res, 12)
+	
+	def test_negative_side(self):
+		res = triangle.perimeter(-2, -3, 4)
+		self.assertIsNone(res)
